@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>25EA690F-6BE3-43A2-AC9D-7484A50F34A6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AdoboMovement</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</key>
 		<string>https://github.com/arghpee/AdoboMovement.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AdoboMovement.xcodeproj</string>
+	<string>AdoboMovement.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</key>

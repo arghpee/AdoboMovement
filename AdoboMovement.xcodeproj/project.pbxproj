@@ -19,7 +19,7 @@
 		F804277F1B2131A400D06996 /* adobo-pen.png in Resources */ = {isa = PBXBuildFile; fileRef = F804277B1B2131A400D06996 /* adobo-pen.png */; };
 		F80427801B2131A400D06996 /* Mohave-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F804277C1B2131A400D06996 /* Mohave-Bold.otf */; };
 		F80427821B213E3C00D06996 /* adobo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80427811B213E3C00D06996 /* adobo-logo.png */; };
-		F80427941B2162B300D06996 /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80427931B2162B300D06996 /* PJRSignatureView.m */; };
+		F84C2E0D1B25810B000760F7 /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C2E0C1B25810B000760F7 /* PJRSignatureView.m */; };
 		F88017431B251C7300A686A4 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F880171F1B251C7300A686A4 /* AFHTTPRequestOperation.m */; };
 		F88017441B251C7300A686A4 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F88017211B251C7300A686A4 /* AFHTTPRequestOperationManager.m */; };
 		F88017451B251C7300A686A4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F88017231B251C7300A686A4 /* AFHTTPSessionManager.m */; };
@@ -69,8 +69,8 @@
 		F804277B1B2131A400D06996 /* adobo-pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adobo-pen.png"; sourceTree = "<group>"; };
 		F804277C1B2131A400D06996 /* Mohave-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-Bold.otf"; sourceTree = "<group>"; };
 		F80427811B213E3C00D06996 /* adobo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adobo-logo.png"; sourceTree = "<group>"; };
-		F80427921B2162B300D06996 /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PJRSignatureView.h; path = ../../PJRSignatureView/PJRSignatureView.h; sourceTree = "<group>"; };
-		F80427931B2162B300D06996 /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PJRSignatureView.m; path = ../../PJRSignatureView/PJRSignatureView.m; sourceTree = "<group>"; };
+		F84C2E0B1B25810B000760F7 /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
+		F84C2E0C1B25810B000760F7 /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
 		F880171E1B251C7300A686A4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F880171F1B251C7300A686A4 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F88017201B251C7300A686A4 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -209,8 +209,8 @@
 		F80427911B21629D00D06996 /* PJRSignatureView */ = {
 			isa = PBXGroup;
 			children = (
-				F80427921B2162B300D06996 /* PJRSignatureView.h */,
-				F80427931B2162B300D06996 /* PJRSignatureView.m */,
+				F84C2E0B1B25810B000760F7 /* PJRSignatureView.h */,
+				F84C2E0C1B25810B000760F7 /* PJRSignatureView.m */,
 			);
 			name = PJRSignatureView;
 			sourceTree = "<group>";
@@ -374,6 +374,7 @@
 				F880174F1B251C7300A686A4 /* UIButton+AFNetworking.m in Sources */,
 				F88017521B251C7300A686A4 /* UIRefreshControl+AFNetworking.m in Sources */,
 				F880174E1B251C7300A686A4 /* UIAlertView+AFNetworking.m in Sources */,
+				F84C2E0D1B25810B000760F7 /* PJRSignatureView.m in Sources */,
 				F80427591B21306D00D06996 /* ViewController.m in Sources */,
 				F88017471B251C7300A686A4 /* AFSecurityPolicy.m in Sources */,
 				F80427561B21306D00D06996 /* AppDelegate.m in Sources */,
@@ -382,7 +383,6 @@
 				F88017501B251C7300A686A4 /* UIImageView+AFNetworking.m in Sources */,
 				F88017431B251C7300A686A4 /* AFHTTPRequestOperation.m in Sources */,
 				F880174D1B251C7300A686A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				F80427941B2162B300D06996 /* PJRSignatureView.m in Sources */,
 				F88017491B251C7300A686A4 /* AFURLRequestSerialization.m in Sources */,
 				F88017451B251C7300A686A4 /* AFHTTPSessionManager.m in Sources */,
 				F88017461B251C7300A686A4 /* AFNetworkReachabilityManager.m in Sources */,
