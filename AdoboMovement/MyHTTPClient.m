@@ -38,7 +38,9 @@ static NSString * const OnlineURLString = @"http://gift.jumpdigital.asia";
 
 - (void)postToAPIWithParams:(NSMutableDictionary *)parameters andWithImageData:(NSData *)imageData {
     [self POST:@"/adobo-signature-api/registrants" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileData:imageData name:@"signature" fileName:@"signature.jpg" mimeType:@"image/jpeg"];
+        if (imageData != nil) {
+            [formData appendPartWithFileData:imageData name:@"signature" fileName:@"signature.jpg" mimeType:@"image/jpeg"];
+        }
     } success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(myHTTPClient:didPostToAPI:)]) {
             [self.delegate myHTTPClient:self didPostToAPI:responseObject];
