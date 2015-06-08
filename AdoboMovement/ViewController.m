@@ -53,6 +53,7 @@
 
 - (void)myHTTPClient:(MyHTTPClient *)client didPostToAPI:(id)response
 {
+    NSLog(@"%@", response);
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!"
                                                         message:@"The response was successfully posted."
                                                        delegate:nil
@@ -62,6 +63,7 @@
 
 - (void)myHTTPClient:(MyHTTPClient *)client didFailWithError:(NSError *)error
 {
+    NSLog(@"%@", error);
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Posting to API"
                                                         message:[NSString stringWithFormat:@"%@",error]
                                                        delegate:nil

@@ -8,8 +8,7 @@
 
 #import "MyHTTPClient.h"
 
-static NSString * const OnlineAPIKey = @"PASTE YOUR API KEY HERE";
-static NSString * const OnlineURLString = @"http://gift.jumpdigital.asia/";
+static NSString * const OnlineURLString = @"http://gift.jumpdigital.asia";
 
 @implementation MyHTTPClient
 
@@ -38,8 +37,8 @@ static NSString * const OnlineURLString = @"http://gift.jumpdigital.asia/";
 }
 
 - (void)postToAPIWithParams:(NSMutableDictionary *)parameters andWithImageData:(NSData *)imageData {
-    [self POST:@"adobo-signature-api/registrants" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:imageData name:@"signature"];
+    [self POST:@"/adobo-signature-api/registrants" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:imageData name:@"signature" fileName:@"signature.jpg" mimeType:@"image/jpeg"];
     } success:^(NSURLSessionDataTask *task, id responseObject) {
         if ([self.delegate respondsToSelector:@selector(myHTTPClient:didPostToAPI:)]) {
             [self.delegate myHTTPClient:self didPostToAPI:responseObject];
