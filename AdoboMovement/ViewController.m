@@ -29,9 +29,10 @@
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     // Do any additional setup after loading the view, typically from a nib.
-    //signatureView= [[PJRSignatureView alloc] initWithFrame:CGRectMake(7, 457, 487, 225)];
-    signatureView= [[PJRSignatureView alloc] initWithFrame:CGRectMake(7, 482, 487, 200)];
-    [signatureView setBackgroundColor:[UIColor whiteColor]];
+    signatureView= [[PJRSignatureView alloc] initWithFrame:CGRectMake(7, 457, 487, 225)];
+    //signatureView= [[PJRSignatureView alloc] initWithFrame:CGRectMake(7, 482, 487, 200)];
+    [signatureView setBackgroundColor:[UIColor clearColor]];
+    [signatureView setOpaque:NO];
     [self.view addSubview:signatureView];
 }
 
