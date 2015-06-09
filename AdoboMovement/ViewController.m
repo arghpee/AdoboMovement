@@ -45,7 +45,7 @@
 - (IBAction)pledgeBtnPressed:(id)sender {
     UIImage *signature = [signatureView getSignatureImage]; // Get signature image
     self.imageData = UIImageJPEGRepresentation(signature, 0.5);
-    
+    NSLog(@"Pledge button pressed: %@", self.imageData);
     if ([self areAllInputsValid]) {
         [self startPostingToAPI];
     }
@@ -118,7 +118,7 @@
         self.errors = [self.errors stringByAppendingString:@"The contact number must be purely numerical and must be composed of 11 digits.\n"];
     }
     
-    if (!self.imageData) {
+    if (self.imageData.length == 0) {
         self.errors = [self.errors stringByAppendingString:@"The signature field must not be empty.\n"];
     }
     

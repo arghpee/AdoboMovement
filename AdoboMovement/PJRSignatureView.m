@@ -177,7 +177,7 @@
 
 - (UIImage *)getSignatureImage {
     
-    if([lblSignature superview]){
+    if([lblSignature superview] || incrImage == nil){
         return nil;
     }
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);
