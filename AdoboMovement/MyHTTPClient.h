@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Rizza Corella Punsalan. All rights reserved.
 //
 
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 @protocol MyHTTPClientDelegate;
 @interface MyHTTPClient : AFHTTPSessionManager

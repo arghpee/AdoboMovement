@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdoboMovement/ViewController.m"
-            timestampString = "455506513.718694"
+            timestampString = "455523753.065577"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "-startPostingToAPI"
             landmarkType = "5">
          </BreakpointContent>

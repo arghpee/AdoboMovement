@@ -22,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *numberTextField;
 @property (weak, nonatomic) NSData *imageData;
-@property (weak, nonatomic) NSString *errors;
+@property (strong, nonatomic) NSString *errors;
 
 @end
 

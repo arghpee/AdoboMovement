@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>11A30631-608F-474E-9BD0-F1BEDBC06DFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdoboMovement</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</key>
+		<string>https://github.com/arghpee/AdoboMovement.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AdoboMovement.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/arghpee/AdoboMovement.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CFCF578A2BEBB385965D4B2267C1A3A74F29D1ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AdoboMovement</string>
+		</dict>
+	</array>
+</dict>
+</plist>

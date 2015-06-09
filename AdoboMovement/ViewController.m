@@ -45,9 +45,10 @@
 - (IBAction)pledgeBtnPressed:(id)sender {
     UIImage *signature = [signatureView getSignatureImage]; // Get signature image
     self.imageData = UIImageJPEGRepresentation(signature, 0.5);
-    NSLog(@"Pledge button pressed: %@", self.imageData);
+    NSLog(@"Pledge button pressed");
     if ([self areAllInputsValid]) {
         [self startPostingToAPI];
+        NSLog(@"Start Posting to API");
     }
     else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Invalid Input."
