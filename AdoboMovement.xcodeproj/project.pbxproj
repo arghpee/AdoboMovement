@@ -20,6 +20,7 @@
 		F80427801B2131A400D06996 /* Mohave-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F804277C1B2131A400D06996 /* Mohave-Bold.otf */; };
 		F80427821B213E3C00D06996 /* adobo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80427811B213E3C00D06996 /* adobo-logo.png */; };
 		F84C2E0D1B25810B000760F7 /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C2E0C1B25810B000760F7 /* PJRSignatureView.m */; };
+		F84C2E101B258891000760F7 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C2E0F1B258891000760F7 /* Validator.m */; };
 		F88017431B251C7300A686A4 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F880171F1B251C7300A686A4 /* AFHTTPRequestOperation.m */; };
 		F88017441B251C7300A686A4 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F88017211B251C7300A686A4 /* AFHTTPRequestOperationManager.m */; };
 		F88017451B251C7300A686A4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F88017231B251C7300A686A4 /* AFHTTPSessionManager.m */; };
@@ -71,6 +72,8 @@
 		F80427811B213E3C00D06996 /* adobo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adobo-logo.png"; sourceTree = "<group>"; };
 		F84C2E0B1B25810B000760F7 /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
 		F84C2E0C1B25810B000760F7 /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
+		F84C2E0E1B258891000760F7 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		F84C2E0F1B258891000760F7 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
 		F880171E1B251C7300A686A4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F880171F1B251C7300A686A4 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F88017201B251C7300A686A4 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				F804275D1B21306D00D06996 /* Images.xcassets */,
 				F804275F1B21306D00D06996 /* LaunchScreen.xib */,
 				F80427501B21306D00D06996 /* Supporting Files */,
+				F84C2E0E1B258891000760F7 /* Validator.h */,
+				F84C2E0F1B258891000760F7 /* Validator.m */,
 			);
 			path = AdoboMovement;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				F880174D1B251C7300A686A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F88017491B251C7300A686A4 /* AFURLRequestSerialization.m in Sources */,
 				F88017451B251C7300A686A4 /* AFHTTPSessionManager.m in Sources */,
+				F84C2E101B258891000760F7 /* Validator.m in Sources */,
 				F88017461B251C7300A686A4 /* AFNetworkReachabilityManager.m in Sources */,
 				F88017561B251CE300A686A4 /* MyHTTPClient.m in Sources */,
 				F880174A1B251C7300A686A4 /* AFURLResponseSerialization.m in Sources */,

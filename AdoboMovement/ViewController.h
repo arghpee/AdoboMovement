@@ -21,7 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *ageTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *numberTextField;
-
+@property (weak, nonatomic) NSData *imageData;
+@property (weak, nonatomic) NSString *errors;
 
 @end
 

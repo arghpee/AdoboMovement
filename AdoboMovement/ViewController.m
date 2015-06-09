@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Validator.h"
 
 @interface ViewController ()
 
@@ -42,7 +43,19 @@
 }
 
 - (IBAction)pledgeBtnPressed:(id)sender {
-    [self startPostingToAPI];
+    UIImage *signature = [signatureView getSignatureImage]; // Get signature image
+    self.imageData = UIImageJPEGRepresentation(signature, 0.5);
+    
+    if ([self areAllInputsValid]) {
+        [self startPostingToAPI];
+    }
+    else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Invalid Input."
+                                                            message:self.errors
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 - (IBAction)clrBtnPressed:(id)sender {
@@ -73,9 +86,52 @@
     [alertView show];
 }
 
+- (BOOL) areAllInputsValid {
+    self.errors = @"";
+    
+    if (![Validator isFieldNotEmpty:nameTextField.text]) {
+        NSLog(@"Some fields are empty.");
+        self.errors = [self.errors stringByAppendingString:@"The name field must not be empty.\n"];
+    }
+    else if (![Validator isThisAValidName:nameTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The name must contain only letters and spaces.\n"];
+    }
+    
+    if (![Validator isFieldNotEmpty:ageTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The age field must not be empty.\n"];
+    }
+    else if (![Validator isThisAValidAge:ageTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The age must be a number.\n"];
+    }
+    
+    if (![Validator isFieldNotEmpty:emailTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The email field must not be empty.\n"];
+    }
+    else if (![Validator isThisAValidEmail:emailTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The email must follow the valid email format.\n"];
+    }
+    
+    if (![Validator isFieldNotEmpty:numberTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The contact number field must not be empty.\n"];
+    }
+    else if (![Validator isThisAValidPhoneNum:numberTextField.text]) {
+        self.errors = [self.errors stringByAppendingString:@"The contact number must be purely numerical and must be composed of 11 digits.\n"];
+    }
+    
+    if (!self.imageData) {
+        self.errors = [self.errors stringByAppendingString:@"The signature field must not be empty.\n"];
+    }
+    
+    if ([self.errors isEqual:@""]) {
+        return YES;
+    }
+    else {
+        NSLog(@"Some errors were found.");
+        return NO;
+    }
+}
+
 - (void) startPostingToAPI {
-    UIImage *image = [signatureView getSignatureImage]; // get UIImage of signature
-    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary]; // make NSMutableDictionary with required parameters
     parameters[@"name"] = nameTextField.text;
     parameters[@"age"] = ageTextField.text;
@@ -84,7 +140,7 @@
     parameters[@"format"] = @"json";
     MyHTTPClient *client = [MyHTTPClient mySharedHTTPClient]; // instantiate an object of class MyHTTPClient
     client.delegate = self;
-    [client postToAPIWithParams:parameters andWithImageData:imageData]; // call instance method to POST
+    [client postToAPIWithParams:parameters andWithImageData:self.imageData]; // call instance method to POST
 }
 
 @end
